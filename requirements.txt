@@ -1,0 +1,13 @@
+fastapi>=0.103.1
+python-multipart>=0.0.6
+pillow
+uvicorn>=0.23.2
+mistralai>=0.0.8
+python-dotenv==1.0.0
+pydantic>=2.0.0
+pycountry>=24.6.1
+flask==2.3.3
+gunicorn==21.2.0
+streamlit>=1.30.0
+pandas>=2.0.0
+requests>=2.31.0
