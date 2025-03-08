@@ -29,7 +29,7 @@ MistralOCR is an open-source application that extracts structured information fr
 ## 🚀 Quick Demo
 
 <p align="center">
-  <img src="https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction/blob/main/public/Screen%20Recording%202025-03-08%20at%201.04.23%E2%80%AFPM.mov" alt="MistralOCR Demo" width="720">
+  <img src="https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction/blob/main/public/Demo-Recording.gif" alt="MistralOCR Demo" width="720">
 </p>
 
 ## 🛠️ Installation & Setup
