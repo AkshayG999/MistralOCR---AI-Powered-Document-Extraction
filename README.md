@@ -32,12 +32,52 @@ MistralOCR is an open-source application that extracts structured information fr
   <img src="https://i.imgur.com/ZdCsY6Y.gif" alt="MistralOCR Demo" width="720">
 </p>
 
-## 🛠️ Installation
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+- Python 3.9 or higher
+- A Mistral AI API key (get one at [mistral.ai](https://mistral.ai))
+
+### Option 1: Using Virtual Environment (Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction.git
-cd mistralOCR
+cd MistralOCR---AI-Powered-Document-Extraction
+
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# For Windows:
+venv\Scripts\activate
+# For macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set your Mistral API key
+# Option 1: Create a .env file
+echo "MISTRAL_API_KEY=your_api_key_here" > .env
+
+# Option 2: Set environment variable
+# For Windows:
+# set MISTRAL_API_KEY=your_api_key_here
+# For macOS/Linux:
+# export MISTRAL_API_KEY=your_api_key_here
+
+# Start the application
+python run_app.py
+```
+
+### Option 2: Direct Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction.git
+cd MistralOCR---AI-Powered-Document-Extraction
 
 # Install dependencies
 pip install -r requirements.txt
@@ -48,6 +88,11 @@ echo "MISTRAL_API_KEY=your_api_key_here" > .env
 # Start the application
 python run_app.py
 ```
+
+After running the application:
+1. The FastAPI backend will start on port 8000
+2. The Streamlit UI will start on port 8501
+3. Your default web browser will automatically open to the Streamlit interface
 
 ## 🧩 How It Works
 
