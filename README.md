@@ -201,7 +201,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## ✉️ Contact
 
-Project Link: [https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction](https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction)
+Project Link: [https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction](MistralOCR---AI-Powered-Document-Extraction)
 
 ---
 
