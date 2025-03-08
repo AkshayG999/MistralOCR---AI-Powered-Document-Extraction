@@ -31,7 +31,7 @@ MistralOCR is an open-source application that extracts structured information fr
 
 ```bash
 # Clone the repository
-git clone https://github.com/nirmitee/mistralOCR.git
+git clone https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction.git
 cd mistralOCR
 
 # Install dependencies
@@ -147,10 +147,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## ✉️ Contact
 
-Project Link: [https://github.com/nirmitee/mistralOCR](https://github.com/nirmitee/mistralOCR)
+Project Link: [https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction](https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-ExtractionR)
 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/nirmitee">Akshay</a>
+  Made with ❤️ by <a href="https://github.com/AkshayG999">Akshay</a>
 </p>
