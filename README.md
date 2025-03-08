@@ -12,6 +12,8 @@
 
 MistralOCR is an open-source application that extracts structured information from documents using Mistral's cutting-edge AI. It processes images and PDFs to transform unstructured text into clean, structured JSON data that you can actually use.
 
+**Keywords:** OCR, Optical Character Recognition, Document AI, Document Processing, Text Extraction, Structured OCR, Fast OCR, PDF OCR, Image OCR, Intelligent Document Processing (IDP), Invoice OCR, Receipt OCR, Document Parsing, Data Extraction, AI Document Analysis
+
 ## ✨ Features
 
 - 🤖 **Powered by Mistral AI** - Utilizes Mistral's state-of-the-art OCR and LLM models
@@ -20,6 +22,9 @@ MistralOCR is an open-source application that extracts structured information fr
 - 🔌 **API-First Design** - FastAPI backend for integration with your applications
 - 🔑 **Flexible Authentication** - Use your own Mistral API key or configure from environment
 - 🏁 **One-Click Setup** - Simple installation and startup process
+- 📱 **Multi-Format Support** - Process PDFs, JPGs, PNGs with a unified workflow
+- ⚡ **High-Performance OCR** - Fast and accurate text recognition capabilities
+- 🔄 **Real-time Processing** - Get structured results in seconds
 
 ## 🚀 Quick Demo
 
@@ -59,6 +64,10 @@ python run_app.py
 - **ID Document Extraction** - Capture name, date of birth, ID numbers, and other fields
 - **Form Digitization** - Convert paper forms into digital data automatically
 - **Contract Analysis** - Extract key terms, dates, parties, and clauses
+- **Medical Record Digitization** - Structured extraction from medical documents
+- **Business Card OCR** - Extract contact details and company information
+- **Academic Document Processing** - Process transcripts, certificates, and research papers
+- **Financial Document Analysis** - Extract data from bank statements, reports, and prospectuses
 
 ## 📊 Example Output
 
@@ -147,10 +156,19 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## ✉️ Contact
 
-Project Link: [https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction](https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-ExtractionR)
+Project Link: [https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction](https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction)
 
 ---
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/AkshayG999">Akshay</a>
 </p>
+
+<!-- SEO Keywords -->
+<!-- 
+Document OCR, FastAPI OCR, Streamlit OCR, OCR API, Document Data Extraction, 
+PDF Text Extraction, AI OCR, Automated Data Extraction, OCR Processing, 
+Invoice OCR Processing, OCR Solution, Neural OCR, Intelligent OCR, 
+Document Recognition, Text Recognition, Document Intelligence, Data Capture,
+Receipt Scanner, OCR Automation, Document Digitization, Mistral OCR
+-->
