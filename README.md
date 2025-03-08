@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.9+-blue)
 
 <p align="center">
-  <img src="https://i.imgur.com/PJYz4vG.png" alt="MistralOCR Banner" width="720">
+  <img src="https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction/blob/main/public/UI-imag.png" alt="MistralOCR Banner" width="720">
 </p>
 
 > **Transform any document into structured data with Mistral AI's powerful OCR and LLM capabilities**
