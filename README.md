@@ -152,5 +152,5 @@ Project Link: [https://github.com/nirmitee/mistralOCR](https://github.com/nirmit
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/nirmitee">Nirmitee</a>
+  Made with ❤️ by <a href="https://github.com/nirmitee">Akshay</a>
 </p>
