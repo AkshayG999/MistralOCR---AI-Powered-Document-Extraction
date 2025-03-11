@@ -16,12 +16,36 @@ logger = logging.getLogger(__name__)
 # Load environment variables
 load_dotenv()
 
+# Apply custom CSS for table styling
+def apply_custom_css():
+    st.markdown("""
+        <style>
+        .dataframe th:first-child {
+            min-width: 200px;
+            width: 30% !important;
+        }
+        .dataframe td:first-child {
+            min-width: 200px;
+            width: 30% !important;
+        }
+        .dataframe th:nth-child(2) {
+            width: 70% !important;
+        }
+        .dataframe td:nth-child(2) {
+            width: 70% !important;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
 st.set_page_config(
     page_title="Mistral OCR Extractor",
     page_icon="📄",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# Apply the custom CSS right after page config
+apply_custom_css()
 
 # Function to get or create session state
 def init_session_state():
@@ -89,33 +113,49 @@ def convert_to_displayable(value):
         return ", ".join(str(item) for item in value)
     return value
 
-def display_json_as_table(json_data):
-    """Convert JSON to a more readable table format"""
-    # Handle nested dictionaries in ocr_contents
-    if "ocr_contents" in json_data:
-        ocr_contents = json_data["ocr_contents"]
-        
-        # Create a DataFrame for flat key-values
+def display_nested_structure(data, parent_key=""):
+    """Recursively display nested structures"""
+    if isinstance(data, dict):
+        # It's a dictionary, display as a table
         flat_items = {}
         nested_items = {}
         
-        for key, value in ocr_contents.items():
+        for key, value in data.items():
+            display_key = key.replace("_", " ").title() if not parent_key else key
+            
             if isinstance(value, dict):
-                nested_items[key] = value
+                nested_items[display_key] = value
             else:
-                flat_items[key] = convert_to_displayable(value)
+                flat_items[display_key] = convert_to_displayable(value)
         
+        # Display flat items first
         if flat_items:
-            st.subheader("Document Content")
+            section_title = parent_key.replace("_", " ").title() if parent_key else "Document Content"
+            st.subheader(section_title)
             df = pd.DataFrame(list(flat_items.items()), columns=["Field", "Value"])
             st.table(df)
         
-        # Display nested dictionaries
-        for section, content in nested_items.items():
-            st.subheader(f"{section.replace('_', ' ').title()}")
-            content_display = {k: convert_to_displayable(v) for k, v in content.items()}
-            df = pd.DataFrame(list(content_display.items()), columns=["Field", "Value"])
-            st.table(df)
+        # Then recursively display nested items
+        for section_key, section_data in nested_items.items():
+            new_parent = f"{parent_key} - {section_key}" if parent_key else section_key
+            display_nested_structure(section_data, new_parent)
+    
+    elif isinstance(data, list) and data and isinstance(data[0], dict):
+        # It's a list of dictionaries, display each item
+        st.subheader(parent_key.replace("_", " ").title())
+        for idx, item in enumerate(data):
+            with st.expander(f"Item {idx+1}", expanded=idx==0):
+                display_nested_structure(item, f"{parent_key} Item {idx+1}")
+    
+    else:
+        # Simple value or list of simple values
+        st.write(f"**{parent_key}:** {convert_to_displayable(data)}")
+
+def display_json_as_table(json_data):
+    """Convert JSON to a more readable table format"""
+    # Display document contents
+    if "ocr_contents" in json_data:
+        display_nested_structure(json_data["ocr_contents"])
     
     # Display general metadata
     metadata = {
