@@ -8,6 +8,12 @@
   <img src="https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction/blob/main/public/UI-imag.png" alt="MistralOCR Banner" width="720">
 </p>
 
+## 🚀 Quick Demo
+
+<p align="center">
+  <img src="https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction/blob/main/public/Demo-Recording.gif" alt="MistralOCR Demo" width="720">
+</p>
+
 > **Transform any document into structured data with Mistral AI's powerful OCR and LLM capabilities**
 
 MistralOCR is an open-source application that extracts structured information from documents using Mistral's cutting-edge AI. It processes images and PDFs to transform unstructured text into clean, structured JSON data that you can actually use.
@@ -26,11 +32,6 @@ MistralOCR is an open-source application that extracts structured information fr
 - ⚡ **High-Performance OCR** - Fast and accurate text recognition capabilities
 - 🔄 **Real-time Processing** - Get structured results in seconds
 
-## 🚀 Quick Demo
-
-<p align="center">
-  <img src="https://github.com/AkshayG999/MistralOCR---AI-Powered-Document-Extraction/blob/main/public/Demo-Recording.gif" alt="MistralOCR Demo" width="720">
-</p>
 
 ## 🛠️ Installation & Setup
 
